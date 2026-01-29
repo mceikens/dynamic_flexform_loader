@@ -16,7 +16,7 @@ It allows content elements to be marked with unique keys and their settings to b
 
 ## Installation
 ```bash
- composer require mceikens/dynamic-flexform-loader
+ composer require mceikens/dynamic_flexform_loader
 ```
 ## Why this extension?
 Normally, FlexForm data is linked to a specific instance of a content element. If you want to use this data on all pages (e.g. social media links from a central footer element), you often had to work with fixed UIDs (inflexible during deployment) or use Typoscript constructs. This extension makes the process dynamic and developer-friendly.
