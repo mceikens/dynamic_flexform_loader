@@ -11,7 +11,7 @@ The **DynamicFlexformLoader** extension was created to address exactly this prob
 
 ## Conceptual Idea
 
-The extension acts as a **beacon (“Leuchtfeuer”) within TYPO3**, allowing developers to reliably navigate towards FlexForm settings of content elements **without knowing**:
+The extension acts as a **beacon within TYPO3**, allowing developers to reliably navigate towards FlexForm settings of content elements **without knowing**:
 
 - the UID of the page
 - the UID of the content element
