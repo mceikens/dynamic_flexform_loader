@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  MCEikens\DynamicFlexformLoader\:
+    resource: '../src/*'
+    exclude: '../src/Domain/Model/*'
+
+  MCEikens\DynamicFlexformLoader\Registry\FlexFormItemsRegistry:
+    public: true
+
+  MCEikens\DynamicFlexformLoader\UserFunc\FlexFormItemsProcFunc:
+    public: true

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-01-29T12:00:00Z" product-name="dynamic_flexform_loader">
+        <header/>
+        <body>
+            <!-- TCA Labels for tt_content -->
+            <trans-unit id="tt_content.dynamic_flexform_loader_key">
+                <source>Dynamic FlexForm Loader Key</source>
+            </trans-unit>
+            <trans-unit id="tt_content.dynamic_flexform_loader_key.description">
+                <source>Select the dynamic content element type</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.pi_flexform_settings">
+                <source>Advanced Settings</source>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform_settings.description">
+                <source>Configure additional options for this content element</source>
+            </trans-unit>
+
+            <!-- Tab Label -->
+            <trans-unit id="tt_content.tabs.advanced_settings">
+                <source>Advanced Settings</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

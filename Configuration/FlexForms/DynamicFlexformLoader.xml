@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <sheets>
+        <main>
+            <ROOT>
+                <sheetTitle>LLL:EXT:phlnoweda_user_management/Resources/Private/Language/Plugin/locallang.xlf:plugin.additional_settings.title</sheetTitle>
+                <type>array</type>
+                <el>
+                    <settings.dynamicFlexformLoaderKey>
+                        <label>Key</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <label>Nichts ausgewählt</label>
+                                    <value></value>
+                                </numIndex>
+                            </items>
+                            <itemsProcFunc>MCEikens\DynamicFlexformLoader\UserFunc\FlexFormItemsProcFunc->getRegisteredKeys</itemsProcFunc>
+                        </config>
+                    </settings.dynamicFlexformLoaderKey>
+                </el>
+            </ROOT>
+        </main>
+    </sheets>
+</T3DataStructure>
