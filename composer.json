@@ -2,14 +2,17 @@
 	"name": "mceikens/dynamic_flexform_loader",
 	"type": "typo3-cms-extension",
 	"description": "This extension helps us to fetch flexform settings from content element by key",
-	"license": "GPL-2.0-or-later",
-	"minimum-stability": "dev",
+	"license": "GPL-3.0-or-later",
+	"minimum-stability": "stable",
 	"prefer-stable": true,
 	"version": "1.0.0",
 	"require": {
 		"typo3/cms-core": "^13.4",
 		"php": "^8.4",
-		"ext-pdo": "*"
+		"ext-pdo": "*",
+		"symfony/dependency-injection": "^7.4.3",
+		"psr/log": "^3.0.0",
+		"doctrine/dbal": "^4.3.5"
 	},
 	"autoload": {
 		"psr-4": {
