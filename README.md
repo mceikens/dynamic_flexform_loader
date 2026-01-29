@@ -20,3 +20,10 @@ It allows content elements to be marked with unique keys and their settings to b
 ```
 ## Why this extension?
 Normally, FlexForm data is linked to a specific instance of a content element. If you want to use this data on all pages (e.g. social media links from a central footer element), you often had to work with fixed UIDs (inflexible during deployment) or use Typoscript constructs. This extension makes the process dynamic and developer-friendly.
+
+Contact
+If you have any questions, problems or suggestions for improving the extension, please feel free to contact us:
+
+|                                                                                                                                                                                                                                                                        |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Publisher**<br>- **Name:** MCEikens<br>- **E-Mail:** dialog@mceikens.de<br>- **GitHub Issues:** [https://github.com/mceikens/dynamic_flexform_loader/issues](https://github.com/Pharmaliner/phlabc/issues)<br>- **Website:** [https://www.mceikens.de/](https://www.mceikens.de/) |
