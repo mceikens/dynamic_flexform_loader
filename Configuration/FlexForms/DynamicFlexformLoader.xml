@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <T3DataStructure>
     <sheets>
-        <main>
+        <sDEF>
             <ROOT>
-                <sheetTitle>LLL:EXT:phlnoweda_user_management/Resources/Private/Language/Plugin/locallang.xlf:plugin.additional_settings.title</sheetTitle>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:phlnoweda_user_management/Resources/Private/Language/Plugin/locallang.xlf:plugin.additional_settings.title</sheetTitle>
+                </TCEforms>
                 <type>array</type>
                 <el>
                     <settings.dynamicFlexformLoaderKey>
@@ -22,6 +24,6 @@
                     </settings.dynamicFlexformLoaderKey>
                 </el>
             </ROOT>
-        </main>
+        </sDEF>
     </sheets>
 </T3DataStructure>
