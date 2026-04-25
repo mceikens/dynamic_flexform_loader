@@ -5,8 +5,8 @@ namespace MCEikens\DynamicFlexformLoader\Loader;
 use Doctrine\DBAL\Exception;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
+use TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools;
 use TYPO3\CMS\Core\Database\ConnectionPool;
-use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class FlexFormSettingsLoader implements LoggerAwareInterface
@@ -28,7 +28,7 @@ class FlexFormSettingsLoader implements LoggerAwareInterface
             return [];
         }
 
-        return GeneralUtility::makeInstance(FlexFormService::class)
+        return GeneralUtility::makeInstance(FlexFormTools::class)
             ->convertFlexFormContentToArray($row['pi_flexform'])['settings'] ?? [];
     }
 }

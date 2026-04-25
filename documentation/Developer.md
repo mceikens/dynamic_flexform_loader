@@ -45,6 +45,30 @@ The class implements `FlexFormItemsProviderInterface`, ensuring that all FlexFor
 - are interchangeable
 - can be aggregated via dependency injection
 
+Example:
+```php
+namespace MCEikens\Example\Provider;
+
+use MCEikens\DynamicFlexformLoader\Registry\FlexFormItemsProviderInterface;
+use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
+
+#[AutoconfigureTag('mceikens.dynamic_flexform_provider')]
+class MyCustomFlexFormLoaderProvider implements FlexFormItemsProviderInterface {
+    public const MY_CUSTOM_KEY = 'my_custom_key';
+
+    public function getFlexFormItems(): array
+    {
+        return [
+            self::MY_CUSTOM_KEY => [
+                'key' => self::MY_CUSTOM_KEY,
+                'label' => 'My example key',
+            ],
+        ];
+    }
+}
+
+```
+
 ---
 
 ### Public API

@@ -5,9 +5,9 @@
 	"license": "GPL-3.0-or-later",
 	"minimum-stability": "stable",
 	"prefer-stable": true,
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"require": {
-		"typo3/cms-core": "^13.4",
+		"typo3/cms-core": "^14.3",
 		"php": "^8.4",
 		"ext-pdo": "*",
 		"symfony/dependency-injection": "^7.4.3",

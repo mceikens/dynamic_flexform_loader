@@ -2,9 +2,9 @@
 
 namespace MCEikens\DynamicFlexformLoader\Hook;
 
+use TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\DataHandling\DataHandler;
-use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class DataHandlerHook
@@ -38,12 +38,12 @@ class DataHandlerHook
             ->executeQuery()
             ->fetchAssociative();
 
-        if (!$record || empty($record['pi_flexform_settings'])) {
+        if (!$record || empty($record['dynamic_flexform_loader_settings'])) {
             return;
         }
 
-        $flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
-        $flexFormData = $flexFormService->convertFlexFormContentToArray($record['pi_flexform_settings']);
+        $flexFormService = GeneralUtility::makeInstance(FlexFormTools::class);
+        $flexFormData = $flexFormService->convertFlexFormContentToArray($record['dynamic_flexform_loader_settings']);
 
         $fieldMapping = [
             'settings.dynamicFlexformLoaderKey' => 'dynamic_flexform_loader_key',
